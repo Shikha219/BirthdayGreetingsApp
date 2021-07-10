@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Greeting Card</string>
+    <string name="create_birthday_card">Create Birthday Card</string>
+    <string name="create_anniversary_card">Create Anniversary Card</string>
+    <string name="input_hint_text">“It’s a smile from me To wish you a day that brings the same kind of happiness and joy that you bring to me.”</string>
+</resources>

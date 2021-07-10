@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAnniCardActivity"
+    android:background="@drawable/loginbg">
+
+    <TextView
+        android:id="@+id/helperMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/bangers"
+        android:text= "Enter the name "
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="22sp"
+        android:inputType="textPersonName"
+        android:hint="Shikha"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/helperMessage"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bangers"
+        android:text="Your Wish "
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_below="@id/nameInput"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/wishInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:ems="10"
+        android:textSize="12sp"
+        android:inputType="textPersonName"
+        android:hint="@string/input_hint_text"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/wish"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/createAnniversaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_anniversary_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:backgroundTint="#FF9B122D"
+        android:padding="30dp"
+        android:onClick="createAnniversaryCard"
+        android:layout_below="@id/wishInput"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
